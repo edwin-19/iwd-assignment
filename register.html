@@ -23,6 +23,9 @@
     </script>
     <script src="js/jquery.min.js"></script>
 
+    <!-- Link to validator.js -->
+    <script src="js/validator.js"></script>
+
     <!--start slider -->
     <link rel="stylesheet" href="css/fwslider.css" media="all" />
     <script src="js/jquery-ui.min.js"></script>
@@ -141,17 +144,17 @@
 
               <div>
                 <span>First Name<label>*</label></span>
-                <input type="text" />
+                <input type="text" id="firstName"/>
               </div>
 
               <div>
                 <span>Last Name<label>*</label></span>
-                <input type="text" />
+                <input type="text" id="lastName"/>
               </div>
 
               <div>
                 <span>Email Address<label>*</label></span>
-                <input type="text" />
+                <input type="text" id="email"/>
               </div>
 
               <div class="clear"> </div>
@@ -164,13 +167,13 @@
             <div class="register-bottom-grid">
               <h3>Login Information</h3>
               <div>
-                <span>Confirm Password<label>*</label></span>
-                <input type="text" />
+                <span>Password<label>*</label></span>
+                <input type="password" id="password"  class="inputbox" size="18" autocomplete="off" />
               </div>
 
               <div>
                 <span>Confirm Password<label>*</label></span>
-                <input type="text" />
+                <input type="password" id="confirmPassword" class="inputbox" size="18" autocomplete="off"/>
               </div>
 
               <div class="clear"> </div>
@@ -178,7 +181,7 @@
 
             <div class="clear"> </div>
 
-            <input type="submit" value="submit" />
+            <input type="submit" value="Register" class="button" onclick="validateRegisterForm();"/>
 
           </form>
 
